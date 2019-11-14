@@ -1,0 +1,48 @@
+{
+  "name": "hydrogen-fe",
+  "version": "0.0.0",
+  "private": true,
+  "description": "demo react hydrogen application for migration redux to hydrogen",
+  "homepage": "https://github.com/Lemonpeach/hydrogen-demo/tree/master/packages/be#readme",
+  "license": "MPL-2.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemonpeach/hydrogen-demo.git"
+  },
+  "dependencies": {
+    "@feathersjs/client": "^4.3.11",
+    "@feathersjs/rest-client": "^4.3.11",
+    "@hydrogenjs/react-redux-hydrogen": "^2.0.0",
+    "@hydrogenjs/redux-hydrogen": "^1.1.2",
+    "@hydrogenjs/redux-hydrogen-feathers": "^0.3.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

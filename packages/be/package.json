@@ -1,0 +1,24 @@
+{
+  "name": "be",
+  "version": "0.0.0",
+  "description": "demo express application for migration redux to hydrogen",
+  "homepage": "https://github.com/Lemonpeach/hydrogen-demo/tree/master/packages/be#readme",
+  "license": "MPL-2.0",
+  "main": "src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemonpeach/hydrogen-demo.git"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "@feathersjs/errors": "^4.3.11",
+    "@feathersjs/express": "^4.3.11",
+    "@feathersjs/feathers": "^4.3.11",
+    "@feathersjs/socketio": "^4.3.11",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "feathers-memory": "^4.1.0"
+  }
+}
