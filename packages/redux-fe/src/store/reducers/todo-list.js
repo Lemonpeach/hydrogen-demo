@@ -2,13 +2,13 @@ import {
   FETCH_TODO_LIST_PENDING,
   FETCH_TODO_LIST_FUFILLED,
   FETCH_TODO_LIST_ERROR
-} from '../actions/todo-list';
+} from '../actions/todo-list'
 
 const initialState = {
   loading: false,
   error: false,
   data: []
-};
+}
 
 export const todoList = (state = initialState, { type, data }) => {
   switch (type) {
@@ -32,6 +32,6 @@ export const todoList = (state = initialState, { type, data }) => {
         error: true
       }
     default:
-      return state;
+      return state
   }
-};
+}

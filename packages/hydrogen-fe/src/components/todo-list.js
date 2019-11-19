@@ -1,9 +1,9 @@
-import React, { createRef } from 'react';
-import { useDispatch } from 'react-redux';
-import uuid from 'uuid/v4';
-import { hydrogen, useFind } from '../store/services';
+import React, { createRef } from 'react'
+import { useDispatch } from 'react-redux'
+import uuid from 'uuid/v4'
+import { hydrogen, useFind } from '../store/services'
 
-const addTodoList = hydrogen.service('todo-list').create;
+const addTodoList = hydrogen.service('todo-list').create
 
 export const TodoList = () => {
   const todoList = useFind('todo-list')

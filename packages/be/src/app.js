@@ -1,16 +1,13 @@
-const feathers = require('@feathersjs/feathers');
-const express = require('@feathersjs/express');
-var cors = require('cors');
-const socketio = require('@feathersjs/socketio');
+const feathers = require('@feathersjs/feathers')
+const express = require('@feathersjs/express')
+const memory = require('feathers-memory')
+const cors = require('cors')
 
-const memory = require('feathers-memory');
+const app = express(feathers())
 
-const app = express(feathers());
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.configure(express.rest());
-app.configure(socketio());
+app.use(cors())
+app.use(express.json())
+app.configure(express.rest())
 
 app.use('/todo-list', memory({
   store: {
@@ -31,12 +28,10 @@ app.use('/todo-list', memory({
       title: 'call grandma'
     }
   }
-}));
+}))
 
-app.use(express.errorHandler());
-
-const port = 3030;
+const port = 3030
 
 app.listen(port, () => {
   console.log(`Feathers server listening on port ${port}`)
-});
+})
