@@ -2,7 +2,7 @@ import {
   FETCH_TODO_LIST_PENDING,
   FETCH_TODO_LIST_FUFILLED,
   FETCH_TODO_LIST_ERROR
-} from '../actions/todo-list'
+} from '../thunks/todo-list'
 
 const initialState = {
   loading: false,
