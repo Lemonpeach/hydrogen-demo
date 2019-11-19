@@ -1,6 +1,6 @@
-import React, { useEffect, createRef } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchTodoList, addTodoList } from '../store/actions/todo-list';
+import React, { useEffect, createRef } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchTodoList, addTodoList } from '../store/actions/todo-list'
 
 export const TodoList = () => {
   const dispatch = useDispatch()
@@ -9,7 +9,7 @@ export const TodoList = () => {
     dispatch(fetchTodoList())
   }, [])
 
-  const todoList = useSelector(({ todoList })=> todoList)
+  const todoList = useSelector(({ todoList }) => todoList)
   const newItem = createRef()
 
   return (

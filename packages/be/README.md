@@ -1,11 +1,3 @@
-# `be`
+# Hydrogen-demo be
 
-> TODO: description
-
-## Usage
-
-```
-const be = require('be');
-
-// TODO: DEMONSTRATE API
-```
+Feathers JS express backend for hydrogen demo

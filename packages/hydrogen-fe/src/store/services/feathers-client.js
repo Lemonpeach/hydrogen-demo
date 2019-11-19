@@ -1,5 +1,5 @@
-import feathers from '@feathersjs/client';
-import rest from '@feathersjs/rest-client';
+import feathers from '@feathersjs/client'
+import rest from '@feathersjs/rest-client'
 
 const API = 'http://localhost:3030'
 
