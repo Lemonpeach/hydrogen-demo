@@ -1,6 +1,6 @@
 import React, { useEffect, createRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { fetchTodoList, addTodoList } from '../store/actions/todo-list'
+import { fetchTodoList, addTodoList } from '../store/thunks/todo-list'
 
 export const TodoList = () => {
   const dispatch = useDispatch()

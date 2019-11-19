@@ -5,6 +5,7 @@ export const FETCH_TODO_LIST_PENDING = 'FETCH_TODO_LIST_PENDING'
 export const FETCH_TODO_LIST_ERROR = 'FETCH_TODO_LIST_ERROR'
 export const FETCH_TODO_LIST_FUFILLED = 'FETCH_TODO_LIST_FUFILLED'
 
+export const CREATE_TODO_LIST_PENDING = 'CREATE_TODO_LIST_PENDING'
 export const CREATE_TODO_ITEM_ERROR = 'CREATE_TODO_ITEM_ERROR'
 export const CREATE_TODO_ITEM_SUCCESS = 'CREATE_TODO_ITEM_SUCCESS'
 
@@ -25,6 +26,8 @@ export const fetchTodoList = () => async dispatch => {
 }
 
 export const addTodoList = title => async dispatch => {
+  dispatch({ type: CREATE_TODO_LIST_PENDING })
+
   try {
     const todoItem = await client.service('todo-list').create({
       title,
