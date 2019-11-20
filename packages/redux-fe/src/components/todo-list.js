@@ -23,7 +23,10 @@ export const TodoList = () => {
           ))
         }
       </ol>
-      <form className="form" onSubmit={() => dispatch(addTodoList(newItem.current.value))}>
+      <form className="form" onSubmit={event => {
+        event.preventDefault()
+        dispatch(addTodoList(newItem.current.value))
+      }}>
         <input className="input" type="text" name="todo-item" ref={newItem} />
         <button className="button" type="submit">Add</button>
       </form>
