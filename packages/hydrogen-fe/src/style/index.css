@@ -53,6 +53,8 @@ code {
 
 .todo-item {
   padding: 3px;
+  display: flex;
+  align-items: center;
 }
 
 .form {
