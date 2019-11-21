@@ -1,13 +1,11 @@
 import React, { createRef } from 'react'
 import { useDispatch } from 'react-redux'
 import uuid from 'uuid/v4'
-import { hydrogen, useFind } from '../store/services'
 
-const addTodoItem = hydrogen.service('todo-list').create
-const removeTodoItem = hydrogen.service('todo-list').remove
+const addTodoItem = () => {}
 
 export const TodoList = () => {
-  const todoList = useFind('todo-list')
+  const todoList = []
   const dispatch = useDispatch()
   const newItem = createRef()
 
@@ -18,7 +16,6 @@ export const TodoList = () => {
           todoList.length > 0 && todoList.map(({ id, title }) => (
             <li className="todo-item" key={id}>
               <div>{title}</div>
-              <button className="button" onClick={() => removeTodoItem(id)(dispatch) }>remove</button>
             </li>
           ))
         }
